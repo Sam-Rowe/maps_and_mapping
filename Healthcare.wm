@@ -1,0 +1,22 @@
+title Life & Healthcare
+anchor Life [0.95, 0.3]
+component Quality [0.79, 0.3] label [19, -4]
+component Longevity [0.79, 0.6]
+component Hospitals [0.52, 0.81]
+component Dr's Surgery [0.63, 0.60]
+component Chemist [0.68, 0.82]
+component RNA vaccine [0.43, 0.35] label [-57, 15]
+evolve RNA vaccine 0.7 label [16, 7]
+component Inactivated Vaccine [0.1, 0.8] label [-27, 20]
+
+
+Life->Quality
+Life->Longevity
+Longevity->Hospitals
+Longevity->Dr's Surgery
+Longevity->Chemist
+Quality->RNA vaccine
+Quality->Inactivated Vaccine 
+
+
+style wardley
